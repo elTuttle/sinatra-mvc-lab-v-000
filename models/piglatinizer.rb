@@ -19,7 +19,7 @@ class PigLatinizer
   end
 
   def consonant_sound(text_array)
-    if text_array[0] =~ (/[]/)
+    if text_array[0] =~ (/[bcdfghjklmnpqrstvwxyz]/) != nil && text_array[0] =~ (/[aeiou]/) 
 
   end
 
