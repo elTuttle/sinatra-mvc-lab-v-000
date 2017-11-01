@@ -19,7 +19,7 @@ class PigLatinizer
     end
 
     words.join(" ")
-    
+
   end
 
 end
