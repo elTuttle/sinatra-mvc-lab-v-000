@@ -19,6 +19,7 @@ class PigLatinizer
   end
 
   def consonant_sound(text_array)
+    if text_array[0] =~ (/[]/)
 
   end
 
@@ -27,10 +28,6 @@ class PigLatinizer
   end
 
   def vowel_sound(text_array)
-
-  end
-
-  def consonant_sound(text_array)
 
   end
 
