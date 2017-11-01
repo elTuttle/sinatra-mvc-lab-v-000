@@ -7,6 +7,7 @@ class PigLatinizer
     words_array = []
     words.each do |word|
       word_array = word.split("")
+      binding.pry
       if consonant_sound(word_array)
         first_letter = word_array[0]
         word_array << first_letter
@@ -22,7 +23,6 @@ class PigLatinizer
         word_array.shift
         words_array << word_array.join
       elsif vowel_sound(word_array)
-        binding.pry
         word_array << "way"
         words_array << word_array.join
       end
