@@ -2,6 +2,7 @@ class PigLatinizer
 
   def piglatinize(text)
     words = text.split(" ")
+    words_array
     words.each do |word|
 
       word_array = word.split("")
