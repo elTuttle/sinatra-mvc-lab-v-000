@@ -1,12 +1,6 @@
 class PigLatinizer
 
-  attr_accessor :text
-
-  def initialize(text)
-    @text = text
-  end
-
-  def piglatinizes
+  def piglatinizes(text)
     words = @text.split(" ")
     words.each do |word|
 
