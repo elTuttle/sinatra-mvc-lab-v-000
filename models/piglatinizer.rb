@@ -11,10 +11,10 @@ class PigLatinizer
       word_array << "ay"
       word_array.shift
       words_array << word_array.join
-      
+
     end
 
-    words.join(" ")
+    words_join.join(" ")
 
   end
 
