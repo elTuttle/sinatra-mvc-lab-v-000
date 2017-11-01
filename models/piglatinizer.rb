@@ -19,19 +19,27 @@ class PigLatinizer
   end
 
   def consonant_sound(text_array)
+    if (text_array[0] =~ (/[bcdfghjklmnpqrstvwxyz]/)) != nil && (text_array[0] =~ (/[aeiou]/)) != nil
+      true
+    else
+      false
+    end
+  end
+
+  def consonant_cluster(text_array)
+    if (text_array[0] =~ (/[bcdfghjklmnpqrstvwxyz]/)) != nil && (text_array[0] =~ (/[bcdfghjklmnpqrstvwxyz]/)) != nil
+      true
+    else
+      false
+    end
+  end
+
+  def vowel_sound(text_array)
     if text_array[0] =~ (/[bcdfghjklmnpqrstvwxyz]/) != nil && text_array[0] =~ (/[aeiou]/) != nil
       true
     else
       false
-    end  
-  end
-
-  def consonant_cluster(text_array)
-
-  end
-
-  def vowel_sound(text_array)
-
+    end
   end
 
 end
