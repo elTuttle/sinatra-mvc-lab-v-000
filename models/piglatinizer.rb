@@ -4,7 +4,6 @@ class PigLatinizer
 
   def piglatinize(text)
     words = text.split(" ")
-    binding.pry
     words_array = []
     words.each do |word|
       word_array = word.split("")
@@ -23,8 +22,8 @@ class PigLatinizer
         word_array.shift
         words_array << word_array.join
       elsif vowel_sound(word_array)
+        binding.pry
         word_array << "way"
-        puts(word_array)
         words_array << word_array.join
       end
 
