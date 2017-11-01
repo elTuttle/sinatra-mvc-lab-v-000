@@ -11,10 +11,9 @@ class PigLatinizer
       if consonant_sound(word_array)
         word_array.each do
           letter = word_array[0]
-          word_array << first_letter
-          word_array << "ay"
+          word_array << letter
           word_array.shift
-          words_array << word_array.join
+          break if vowel_sound(word_array)
         end
       elsif vowel_sound(word_array)
         word_array << "way"
