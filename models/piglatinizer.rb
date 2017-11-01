@@ -4,15 +4,14 @@ class PigLatinizer
     words = text.split(" ")
     words_array = []
     words.each do |word|
-      if consonant_sound
-        word_array = word.split("")
+      word_array = word.split("")
+      if consonant_sound(word_array)
         first_letter = word_array[0]
         word_array << first_letter
         word_array << "ay"
         word_array.shift
         words_array << word_array.join
       elsif consonant_cluster
-        word_array = word.split("")
         first_letter = word_array[0]
         second_letter = word_array[1]
         word_array << first_letter
@@ -21,7 +20,6 @@ class PigLatinizer
         word_array.shift
         words_array << word_array.join
       elsif vowel_sound
-        word_array = word.split("")
         word_array << "way"
         word_array.shift
         words_array << word_array.join
