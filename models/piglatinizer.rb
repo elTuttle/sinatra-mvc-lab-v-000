@@ -1,6 +1,6 @@
 class PigLatinizer
 
-  def piglatinizes(text)
+  def piglatinize(text)
     words = text.split(" ")
     words.each do |word|
 
