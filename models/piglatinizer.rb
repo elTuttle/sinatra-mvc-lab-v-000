@@ -14,6 +14,8 @@ class PigLatinizer
       first_letter = word_array[0]
       word_array << first_letter
       word_array << "ay"
+      word_array.shift
+      word = word_array.join
       
     end
   end
