@@ -10,7 +10,7 @@ class PigLatinizer
       #binding.pry
       if consonant_sound(word_array)
         word_array.each do
-          first_letter = word_array[0]
+          letter = word_array[0]
           word_array << first_letter
           word_array << "ay"
           word_array.shift
