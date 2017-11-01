@@ -12,10 +12,16 @@ class PigLatinizer
         word_array.shift
         words_array << word_array.join
       elsif consonant_cluster
-
+        word_array = word.split("")
+        first_letter = word_array[0]
+        second_letter = word_array[1]
+        word_array << first_letter
+        word_array << "ay"
+        word_array.shift
+        words_array << word_array.join
       elsif vowel_sound
-        
-      end  
+
+      end
 
     end
 
