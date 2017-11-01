@@ -21,7 +21,10 @@ class PigLatinizer
         word_array.shift
         words_array << word_array.join
       elsif vowel_sound
-
+        word_array = word.split("")
+        word_array << "way"
+        word_array.shift
+        words_array << word_array.join
       end
 
     end
