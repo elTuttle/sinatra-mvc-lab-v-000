@@ -6,4 +6,6 @@ class App < Sinatra::Base
     erb :user_input
   end
 
+  post '/piglatinize'
+
 end
