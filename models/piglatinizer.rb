@@ -21,6 +21,7 @@ class PigLatinizer
         word_array << second_letter
         word_array << "ay"
         word_array.shift
+        word_array.shift
         words_array << word_array.join
       elsif vowel_sound(word_array)
         word_array << "way"
