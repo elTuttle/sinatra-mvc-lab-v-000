@@ -15,6 +15,8 @@ class PigLatinizer
           word_array.shift
           break if vowel_sound(word_array)
         end
+        word_array << "ay"
+        words_array << word_array.join
       elsif vowel_sound(word_array)
         word_array << "way"
         words_array << word_array.join
