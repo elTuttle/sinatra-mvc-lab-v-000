@@ -2,6 +2,10 @@ require 'pry'
 
 class PigLatinizer
 
+  def to_pig_latin(text)
+    piglatinize(text)
+  end
+
   def piglatinize(text)
     words = text.split(" ")
     words_array = []
