@@ -1,3 +1,5 @@
+require 'pry'
+
 class PigLatinizer
 
   def piglatinize(text)
