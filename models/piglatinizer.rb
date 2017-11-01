@@ -18,4 +18,20 @@ class PigLatinizer
     result
   end
 
+  def consonant_sound(text_array)
+    
+  end
+
+  def consonant_cluster(text_array)
+    
+  end
+
+  def consonant_sound(text_array)
+    
+  end
+
+  def consonant_sound(text_array)
+    
+  end
+
 end
